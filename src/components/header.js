@@ -13,7 +13,7 @@ class Header extends Component {
        return(
         <header>
             <div className="logo" onClick={ () => console.log('i was clicked') }>Logo</div>
-            <input placeholder="Search title" onChange={this.inputChange.bind(this)}/>
+            <input placeholder="Search title" onChange={(e)=>this.inputChange(e)}/>
         </header>
        )
     }
